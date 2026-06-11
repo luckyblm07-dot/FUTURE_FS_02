@@ -1,16 +1,122 @@
-# React + Vite
+TEST CHANGE FOR GIT CHECK
+# 🚀 SmartLead CRM (Full Stack MERN Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+SmartLead CRM is a full-stack web application built to manage, track, and convert business leads efficiently. It simulates a real-world CRM system used in companies to handle client data and sales pipelines.
 
-Currently, two official plugins are available:
+This project demonstrates real-world full-stack development using MERN stack with API integration, database handling, and cloud deployment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
+## 🎯 Project Purpose
 
-## React Compiler
+This project was built to simulate a real-world CRM system used in companies to manage customer leads efficiently.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It helps in:
+- Tracking potential customers
+- Managing lead status in real-time
+- Organizing sales pipeline data
+- Improving productivity in client management
 
-## Expanding the ESLint configuration
+This demonstrates practical full-stack development skills including frontend UI, backend API design, database integration, and cloud deployment.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Login UI (frontend simulation)
+- Dashboard with live lead statistics
+- Add new leads (Create)
+- View all leads (Read)
+- Update lead status (New / Contacted / Converted)
+- Delete leads (Delete)
+- Search leads by name, email, or company
+- MongoDB Atlas cloud database integration
+- Fully deployed frontend (Vercel) + backend (Render)
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React.js
+- HTML
+- CSS
+- JavaScript
+
+**Backend:**
+- Node.js
+- Express.js
+
+**Database:**
+- MongoDB Atlas
+
+**Deployment:**
+- Frontend: Vercel  
+- Backend: Render  
+
+---
+
+## 🌐 Live Links
+
+- Frontend (Vercel): https://future-fs-02-sigma-nine.vercel.app/
+- Backend (Render): https://future-fs-02-zep2.onrender.com
+
+---
+
+## 📡 API Endpoints
+
+| Method | Endpoint | Description |
+|------|--------|-------------|
+| GET | /leads | Get all leads |
+| POST | /leads | Add new lead |
+| PUT | /leads/:id | Update lead status |
+| DELETE | /leads/:id | Delete lead |
+
+---
+
+## ⚙️ How to Run Locally
+
+### 1.Clone the Repository
+```bash
+git clone https://github.com/luckyblm07-dot/FUTURE_FS_02
+```
+
+### 2. Install frontend dependencies
+```bash
+npm install
+```
+
+### 3. Start frontend
+```bash
+npm start
+```
+
+### 4. Go to backend folder
+```bash
+cd backend
+```
+
+### 5. Install backend dependencies
+```bash
+npm install
+```
+
+### 6. Start backend server
+```bash
+node index.js
+```
+
+---
+
+## 📌 Key Highlights
+
+- Fully functional CRUD operations
+- Real-time data updates
+- Cloud database integration (MongoDB Atlas)
+- REST API architecture
+- Deployed full-stack application
+- Beginner-friendly but industry-style project
+
+
+## 👨‍💻 Author
+
+Lakshmi Mahathi Bhimavarapu  
+Full Stack Developer (MERN Stack Learner)
