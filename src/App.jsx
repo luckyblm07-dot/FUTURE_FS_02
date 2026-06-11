@@ -1,11 +1,12 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+const API_URL = "https://future-fs-02-zep2.onrender.com";
 
 function App() {
   const [leads, setLeads] = useState([]);
 
 useEffect(() => {
-  fetch("http://localhost:5000/leads")
+ fetch(`${API_URL}/leads`)
     .then((response) => response.json())
     .then((data) => setLeads(data))
     .catch((error) => console.error(error));
@@ -17,7 +18,7 @@ const addLead = async () => {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/leads", {
+    const response = await fetch(`${API_URL}/leads`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -299,9 +300,7 @@ if (!loggedIn) {
     const newStatus = e.target.value;
 
     try {
-      const response = await fetch(
-        `http://localhost:5000/leads/${lead._id}`,
-        {
+      const response = awaitfetch(`${API_URL}/leads/${lead._id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -335,7 +334,7 @@ if (!loggedIn) {
   onClick={async () => {
     if (window.confirm("Delete this lead?")) {
       try {
-        await fetch(`http://localhost:5000/leads/${lead._id}`, {
+        await fetch(`${API_URL}/leads/${lead._id}`, {
           method: "DELETE",
         });
 
